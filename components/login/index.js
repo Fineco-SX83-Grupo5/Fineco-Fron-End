@@ -9,9 +9,6 @@ export default function Login () {
   
     const handleSubmit = async (e) => {
       e.preventDefault();
-      // Here you can handle form submission, like sending data to an API
-      console.log("Email:", email);
-      console.log("Password:", password);
     };
   
     return (

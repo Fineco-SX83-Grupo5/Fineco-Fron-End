@@ -1,102 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 
 :root {
   --white: #ffffff;
-  --gray: rgba(255, 255, 255, 0.799);
+  --gray: rgb(215, 235, 255);
   --text: #000D24;
-  --red: #df4522;
   --blue: #1f65e6;
 }
 *{
   outline: none;
-  font-family: "Nunito", sans-serif;
   transition: .5s;
 }
-/* 
-  border: 4px solid;
-  border-top-color: var(--red);
-  border-left-color: var(--red);
-  border-right-color: var(--blue);
-  border-bottom-color: var(--blue); */
 
 body {
-  font-family: Arial, sans-serif;
-  background: white;
   color: var(--text);
   margin: 0;
   padding: 0;
 }
-.login-bg{
-  background: linear-gradient(90deg, var(--red), var(--blue));
+nav{
+  padding: 1rem 5vw;
 }
-
-.login-container {
-  width: clamp(300px, calc(30vw + 50px), calc(30vw + 50px));
-  padding: 30px;
-  border-radius: 20px;
-  margin: auto;
-  color: white;
+table tbody{
+  padding: 10px;
+}
+.panel-inicial{
+  padding: 0 5vw;
+}
+.panel-inicial a{
+  width: 30%;
+  background-color: var(--gray);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: clamp(25px, calc(1vmin + 10px), calc(1vmin + 10px));
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   justify-content: center;
-  background-color: rgba(255,255,255,.2);
-  box-shadow: 0 0 10px var(--white);
 }
-
-.login-container h2 {
-  text-align: center;
-  font-size: clamp(30px, calc(2vmax + 15px), calc(2vmax + 15px));
-  font-weight: 600;
+.panel-inicial a:hover{
+  box-shadow: 0 0 10px 0 var(--blue)
 }
-
-form {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+h1,h2,h3,h4,h5,h6, button, th, a, input{
+  font-family: 'Poetsen One', cursive;
+  font-weight: bold;
 }
-
-.white-btn{
-  background: var(--white);
-  color: #000D24;
-}
-
-
-.login-container input {
-  padding: 10px;
-  background-color: transparent;
-  margin-bottom: 16px;
-  border-bottom: 4px solid var(--gray);
-  width: 100%;
-  font-size: clamp(25px, calc(1vmax + 15px), calc(1vmax + 15px));
-  text-align: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.login-container input::placeholder{
-  color: black;
-}
-.login-container input:focus::placeholder{
-  color: var(--gray);
-}
-.login-container input:focus{
-  background: var(--red);
-}
-.login-container button{
-  font-size: clamp(25px, calc(1vmax + 15px), calc(1vmax + 15px));
-  padding: 10px;
-  background: var(--blue);
-}
-form .b-red{border-color: var(--red); }
-form .b-blue{border-color: var(--blue);}
-button {
-  padding: 10px;
-  
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+p, span{
+  font-family: 'Lexend', sans-serif;
 }
